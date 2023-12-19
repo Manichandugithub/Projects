@@ -1,0 +1,154 @@
+.image{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+
+}
+.img1{
+    width: 100%;
+    
+}
+.tags{
+    font-size: 50px;
+    font-family: sans-serif;
+    color:aliceblue;
+    margin-top: -42%;
+    text-align: center;
+    position: absolute;
+    margin-left: 20%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.title{
+    font-family: sans-serif;
+    font-size: large;
+    color: #2c2655;
+    margin-left: 24%;
+   
+    
+}
+.history{
+    font-family: sans-serif;
+    font-size:large;
+    color: #2c2655;
+    margin-left: 193%;
+    margin-top: -20px;
+    margin: 45%;
+}
+.team{
+    font-family: sans-serif;
+    font-size:large;
+    color: #2c2655;
+    margin-left: 45%;
+   
+}
+
+.img2{
+    position: absolute;
+    width: 98%;
+    overflow: hidden;
+    
+}
+
+
+.text3{
+    font-size: 50px;
+    font-family: sans-serif;
+    color:aliceblue;
+    text-align: center;
+    position: absolute;
+    margin-left: 20%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+.Historys{
+    margin-top: -6%;
+    margin-right: -21%;
+
+    
+}
+.histitle{
+    margin-top: -10%;
+    font-family: revert-layer;
+    font-size: large;
+    color: aliceblue;
+    
+}
+
+
+.num{
+    margin-left: -100%;
+}
+
+
+.Headerss{
+    margin-top: 57%;
+    color: #929c9c;
+    margin-left: 27%;
+    font-family: fantasy;
+    font-size: 110px;
+}
+   
+
+
+.textclimb{
+    margin-left: 13%;
+    font-size: 45px;
+    font-family: sans-serif;
+    color: #436576;
+    margin-top: -9%;
+}
+    
+
+.text{
+    font-family: fantasy;
+    color: currentcolor;
+    margin-top: -12%;
+    margin-left: 49%;
+    font-family: cursive;
+}
+
+
+
+.div{
+    background-color:#294e61;
+    color: aliceblue;
+    font-size: x-large;
+    
+    
+}
+.img3{
+    margin-top: -2%;
+    position: absolute;
+    width: 98%;
+    overflow: hidden;
+}
+
+.Box{
+    border: 2px solid aliceblue;
+    width: 338px;
+    background-color: aliceblue;
+    height: 221px;
+    margin-top: 7%;
+    position: absolute;
+    margin-right: 10%;
+    right:550px;
+    position: absolute;
+
+}
+.fonts{
+    font-size: 45%;
+    text-align: center;
+    font-stretch: expanded;
+    color: #294e61;
+   
+}
+.Schedules{
+    font-size:30px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #294e61;
+    
+}
