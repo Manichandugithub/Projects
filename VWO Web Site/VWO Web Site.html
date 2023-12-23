@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  color: white;
+  background-color: #26134d;
+}
+
+.navbar {
+  display: flex; 
+  align-items: center; 
+  overflow: hidden;
+  background-color: #26134d;
+  height: 0%;
+  padding: 10px; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #59369f;
+  opacity: 80;
+  color: white; 
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+  margin-left: 10px; 
+}
+
+.subnavbtn1 {
+  font-size: 19px;
+}
+
+.subnav .subnavbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size: 19px;
+  transition: background-color 0.3s ease;
+}
+
+.subnav .subnavbtn:hover {
+  background-color: #59369f;
+  color: white; 
+}
+
+.subnav1 .subnavbtn1 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #59369f;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.subnav1 .subnavbtn1:hover {
+  background-color: #59369f;
+  color: #26134d; 
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.subnav-content.width-1 {
+  width: 90%;
+  height: 80%;
+  margin-left: 30px;
+  border-radius: 6px;
+  padding-right: 70px;
+}
+
+.subnav-content.width-3 {
+  width: 220px;
+  height: 40%;
+  margin-left: 330px;
+  border-radius: 6px;
+  
+}
+
+.subnav-content.width-4,
+.subnav-content.width-5 {
+  width: 90%;
+  height: 40%;
+  margin-left: 30px;
+  border-radius: 6px;
+  padding-right: 70px;
+}
+
+.subnav-content.width-5 {
+  width: 90%;
+  height: 80%;
+  margin-left: 30px;
+  border-radius: 6px;
+  padding-right: 70px;
+}
+.subnav-content.width-6 {
+  width: 250px;
+  height: 18%;
+  border-radius: 6px;
+  margin-left: 880px;
+}
+.subnav-content.width-7 {
+  width: 90px;
+  height: 22%;
+  border-radius: 6px;
+  margin-left: 1140px;
+}
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+.navbar a.en {
+  margin-left: auto;
+}
+
+.navbar a.en:hover::after {
+  content: "Hello";
+  display: block;
+  margin-top: -16px; 
+  font-size: 12px; 
+  color: white;
+}
+.header{
+  color:#e20072;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.Paragraph{
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header1{
+  color: #26134d;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Paragraph1{
+  color: #26134d;
+  
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+.width4{
+  color: #26134d;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+.subnav-clicked .subnav-content {
+  display: block;
+}
+.Login{
+  color: #26134d;
+  
+}
+.databody{
+  text-align: center;
+  color: white;
+  font-size: 61px;
+  
+}
+.Paragraphsbody{
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+.buttonbody1{
+  background-color:#e20072 ;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  width: 155px;
+  height: 30px;
+  text-align: center;
+  border-radius: 3px solid #e20072;
+  border-color: #e20072;
+  border-radius: 4%;
+  
+}
+.buttonbody2{
+  background-color:#26134d ;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  width: 205px;
+  height: 30px;
+  text-align: center;
+  border-radius: 7%;
+  border-color: white;
+  
+}
+.buttonbody{
+  text-align: center;
+}
+</style>
+<script>
+function toggleSubnav(btnClass) {
+  var subnav = document.querySelector("." + btnClass);
+  subnav.classList.toggle("subnav-clicked");
+}
+
+</script>
+</head>
+<body>
+
+<div class="navbar">
+  <img src="https://static.wingify.com/gcp/images/vwo-logo-white.svg" alt="VWO Logo" decoding="async" loading="eager" width="80" height="26" class="header-top-theme-dark_D(ib) D(n)">
+
+  <div class="subnav">
+    <button class="subnavbtn"  onclick="toggleSubnav('width-1')">Capabilities <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content width-1">
+  
+      <h1 class="header">&emsp;Testing Overview =></h1>
+      <h3 class="header1">&emsp;Web Testing</h3>
+      <h3 class="header1">&emsp;Mobile App Testing</h3>
+      <h3 class="header1">&emsp;Server Side Testing</h3>
+      <h3 class="header1">&emsp;personalization</h3>
+      <h3 class="header1">&emsp;Web Rollouts</h3>
+      <h3 class="header1">&emsp;Customers Data Platform</h3>
+      <h3 class="header1">&emsp;Program Management</h3>
+
+    </div>
+  </div>
+
+  <a href="#" class="subnavbtn" style="font-size: 20px;">Pricing</a>
+
+  <div class="subnav">
+    <button class="subnavbtn" onclick="toggleSubnav('width-3')">Solutions <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content width-3">
+      <p class="Paragraph1" >&emsp;eCommerce</p>
+      <p class="Paragraph1">&emsp;SaaA</p>
+      <p class="Paragraph1">&emsp;eLearning</p>
+      <p class="Paragraph1">&emsp;Media/Publication</p>
+      <p class="Paragraph1">&emsp;Enterprises</p>
+    </div>
+  </div>
+
+  <div class="subnav">
+    <button class="subnavbtn" onclick="toggleSubnav('width-4')">Why VWO? <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content width-4">
+      <p class="width4"><b>&emsp;Proven Product</b></p>
+      <p class="width4">&emsp;2500+ Customers</p>
+      <p class="width4">&emsp;Simple User Interface</p>
+      <p class="width4">&emsp;Secure & Compliant</p>
+      
+    </div>
+    
+  </div>
+
+  <div class="subnav">
+    <button class="subnavbtn" onclick="toggleSubnav('width-5')">Resources <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content width-5">
+        <h1 class="header">&emsp;VWO Library</h1>
+      <h3 class="header1">&emsp;VWO Blog</h3>
+      <h3 class="header1">&emsp;VWO Success Stories</h3>
+      <h3 class="header1">&emsp;Free Tools</h3> 
+      <h3 class="header1">&emsp;Masters Of Conversion</h3>     
+      <h3 class="header1">&emsp;Popular in-depth Guides</h3> 
+
+    </div>
+   
+  </div>
+
+  <a href="#" class="subnavbtn" style="font-size: 15px; margin-left: 240px;;">Contact</a>
+
+  <div class="subnav">
+    <button class="subnavbtn" style="font-size: 15px;"onclick="toggleSubnav('width-6')">Login <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content width-6">
+      <div class="Login">
+        <p>&emsp;VWO Login</p>
+        <p>&emsp;VWO Engage Login</p>
+      </div>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn" style="font-size: 15px;" onclick="toggleSubnav('width-7')">En <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content width-7">
+      <div class="Login">
+        <p><img style="height: 25px;width: 40px;" src="data:image/jpeg;base64,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"  >&emsp;IN</p>
+        <p><img style="height: 30px;width: 40px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuQOe4dWizSxFMkGOzhZtzFyrsbYCtZshYzNh9MgUEKlXJAK1t0Vfxx2xaUnbm0MNN8sY&usqp=CAU"  />&emsp;DE</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <h1 class="databody">Optimize digital Experiences <br>& maximize conversions</h1>
+  <p class="Paragraphsbody">Your customer is evolving every day. Decode their evolving behaviors, fine-tune with robust A/B testing,<br> and personalize experiences that hit home. Boost conversions across your websites and mobile apps <br>through data-driven UI and server-side enhancements.</p>
+</div>
+
+<div class="buttonbody">
+  <input tyep="button" class="buttonbody1" value="Request demo"/>
+  <input tyep="button" class="buttonbody2" value="Try VWO for Free"/>
+
+</div>
+</body>
+</html>
