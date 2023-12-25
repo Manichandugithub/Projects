@@ -1,2 +1,2 @@
 # Projects
-Front End And Web Devlopment
+Front End And Web Development
